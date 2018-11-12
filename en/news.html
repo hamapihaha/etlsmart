@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <title>ETL官方网站</title>
+    <meta charset="UTF-8"/>
+    <link href="./favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="//at.alicdn.com/t/font_589553_on0om2ui2ym.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/news.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background-color: #f5f5f5">
+<div class="frame">
+    <div class="tab" style="background-color: #fff">
+        <img src="img/headImg.jpg" alt="" class="headImg">
+        <a href="./index.html" class="tab-list sub-tab-list">
+            Homepage
+        </a>
+        <a href="./about.html" class="tab-list sub-tab-list">
+            About Us
+        </a>
+        <a href="./product.html" class="tab-list sub-tab-list">
+            Technology and Products
+        </a>
+        <a href="./project.html" class="tab-list sub-tab-list">
+            Smart Solutions
+        </a>
+        <a href="./news.html" class="tab-list sub-tab-list">
+            News
+        </a>
+        <a href="./join.html" class="tab-list sub-tab-list">
+            Join Us
+        </a>
+        <a href="./contact.html" class="tab-list sub-tab-list">
+            Contact Us
+        </a>
+        <div class="out-link">
+            <i class="iconfont">&#xe629;</i>
+            <i class="iconfont">&#xe631;</i>
+            <i class="iconfont">&#xe635;</i>
+        </div>
+    </div>
+    <div class="main" id="frame">
+        <div class="title">
+            <p class="en-til">
+                LATEST NEWS
+            </p>
+        </div>
+        <div class="news" style="overflow: hidden">
+            <div class="news-list">
+                <img src="./img/news/news1.png" alt="" class="news-img-list">
+                <p class="news-title" style="margin: .10rem 0">
+                    The Spokesman of ETL from Space
+                </p>
+                <p class="grey news-time">
+                    2018-07-11
+                </p>
+                <div class="news-content" >
+                    E, the newly appointed spokesman of ETL, another intelligent species in the universe other than human beings. Discovered in 2002 on a distant planet called ETL, they arrived in the Earth through the time tunnel…
+                </div>
+                <img src="./img/know-more.png" alt="" class="know-more">
+            </div>
+            <div class="news-list">
+                <img src="./img/news/news2.png" alt="" class="news-img-list">
+                <p class="news-title" style="margin: .10rem 0">
+                    ETL Dealer Recruitment & PR Event in Wuxi City
+                </p>
+                <p class="grey news-time">
+                    2018-06-29
+                </p>
+                <div class="news-content" >
+                    On June 29th, 2018, we successfully held a PR event in Wuxi to introduce the ETL Smart Home control system to potential dealers…</div>
+                <img src="./img/know-more.png" alt="" class="know-more">
+            </div>
+            <div class="news-list">
+                <img src="./img/news/news3.png" alt="" class="news-img-list">
+                <p class="news-title" style="margin: .1rem 0">
+                    Dream Big, Dream Smart!
+                </p>
+                <p class="grey news-time">
+                    2018-06-06
+                </p>
+                <div class="news-content" >
+                    The integration industry has been evolving at an unbelievable pace and the traditional integration system has fallen short of consumers’ ever-evolving needs. The future undoubtedly belongs to an inter-connected smart era!                </div>
+                <img src="./img/know-more.png" alt="" class="know-more">
+            </div>
+            <div class="news-list">
+                <img src="./img/news/news4.png" alt="" class="news-img-list">
+                <p class="news-title" style="margin: .10rem 0">
+                    ETL Smart Scene Panel Steals the Spotlight</p>
+                <p class="grey news-time">
+                    2018-06-06
+                </p>
+                <div class="news-content" >
+                    The newly-shipped upgraded 8-button/4-button smart scene control panel brings a newly upgraded suite of functions, which enables more at-will home control. It’s something you don’t want to miss!               </div>
+                <img src="./img/know-more.png" alt="" class="know-more">
+            </div>
+        </div>
+        <p class="etl-more" >
+            <i class="iconfont" style="font-size: .22rem;">&#xe60b;</i>
+            More ETL news
+            <i class="iconfont" style="font-size: .21rem;margin-left: .2rem">&#xe89c;</i>
+        </p>
+        <div id="footer"></div>
+        <div id="contact_tab">
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script>
+    $(function () {
+        var whdef = 100 / 1920;// 表示1920的设计图,使用100PX的默认值
+        var wH = window.innerHeight;// 当前窗口的高度
+        var wW = window.innerWidth;// 当前窗口的宽度
+        var rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+        $('html').css('font-size', rem + "px");
+    });
+    $('#footer').load('footer.html');
+    $("#contact_tab").load('contactTab.html');
+</script>
+</html>

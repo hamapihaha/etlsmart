@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+    <title>ETL官方网站</title>
+    <meta charset="UTF-8"/>
+    <link href="./favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="css/swiper-4.3.3.min.css" rel="stylesheet" type="text/css">
+    <link href="//at.alicdn.com/t/font_589553_on0om2ui2ym.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/project.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="frame">
+    <div class="tab">
+        <img src="img/headImg.jpg" alt="" class="headImg">
+        <a href="./index.html" class="tab-list sub-tab-list">
+            首页
+        </a>
+        <a href="./about.html" class="tab-list sub-tab-list">
+            关于我们
+        </a>
+        <a href="./product.html" class="tab-list sub-tab-list">
+            技术与产品
+        </a>
+        <div>
+            <a href="#" class="tab-list sub-tab-list">
+                智能解决方案
+            </a>
+            <ul class="column">
+                <a href="#home" class="sub-col gold" name="home">居家</a>
+                <a href="#vilia" class="sub-col" name="vilia">别墅</a>
+                <a href="#business" class="sub-col" name="business">商业</a>
+            </ul>
+        </div>
+        <a href="./news.html" class="tab-list sub-tab-list">
+            新闻动态
+        </a>
+        <a href="./join.html" class="tab-list sub-tab-list">
+            加入我们
+        </a>
+        <a href="./contact.html" class="tab-list sub-tab-list">
+            联系我们
+        </a>
+        <div class="out-link">
+            <i class="iconfont">&#xe629;</i>
+            <i class="iconfont">&#xe631;</i>
+            <i class="iconfont">&#xe635;</i>
+        </div>
+    </div>
+    <div class="main" id="frame">
+        <div class="swiper-slide progress">
+            <img src="./img/project/progress.png" alt="" align="top">
+        </div>
+        <div class="frame-list swiper-slide " id="home" name="home" style="background-color: #f5f5f5">
+            <div class="product">
+                <p class="en-til">
+                    HOME
+                </p>
+                <p class="gold" style="font-size: 35px">
+                    居家
+                </p>
+            </div>
+            <div class="swiper-container home " style="height: 70%;width: 90%;position: absolute;top: 25%;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/project/home.jpg" alt="" class="home-pic">
+                    </div>
+                </div>
+                <i class="swiper-button-next home-next iconfont">&#xe89c;</i>
+                <i class="swiper-button-prev home-prev iconfont">&#xe625;</i>
+            </div>
+        </div>
+        <div class="swiper-slide frame-list" id="vilia" name="vilia" style="background-color: #333">
+            <div class="product">
+                <p class="en-til grey">
+                    VILIA
+                </p>
+                <p class="gold" style="font-size: 35px">
+                    别墅
+                </p>
+            </div>
+            <div class="swiper-container vilia " style="height: 70%;width: 90%;position: absolute;top: 25%;">
+                <div class="swiper-wrapper vilia-wrapper">
+
+                </div>
+                <i class="swiper-button-next vilia-next iconfont">&#xe89c;</i>
+                <i class="swiper-button-prev vilia-prev iconfont">&#xe625;</i>
+            </div>
+        </div>
+        <div class="swiper-slide frame-list" id="business" name="business">
+            <div class="product">
+                <p class="en-til">
+                    BUSINESS
+                </p>
+                <p class="gold" style="font-size: 35px">
+                    商业
+                </p>
+            </div>
+            <div class="swiper-container business" style="height: 70%;width: 90%;position: absolute;top: 25%;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/project/business.jpg" alt="" class="home-pic">
+                    </div>
+                </div>
+                <i class="swiper-button-next business-next iconfont">&#xe89c;</i>
+                <i class="swiper-button-prev business-prev iconfont">&#xe625;</i>
+            </div>
+        </div>
+        <div id="footer"></div>
+        <div id="contact_tab">
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+    $('#footer').load('footer.html');
+    $("#contact_tab").load('contactTab.html');
+    var html = '';
+    for (var i = 0; i < 11; i++) {
+        html += "<div class='swiper-slide'><img src='img/vilia" + i + ".jpg' class='home-pic swiper-lazy'></div>"
+    }
+    $(".vilia-wrapper").append(html);
+    $("img.lazy").lazyload({
+        effect : "fadeIn",
+    });
+    $('.tab-list').click(function () {
+        $('.tab-list').removeClass('active');
+        $(this).addClass('active')
+        $('.column').slideUp()
+        if ($(this).next('.column')) {
+
+            $(this).next('.column').slideToggle()
+        }
+    });
+    var swiperH = new Swiper('.home', {
+        //autoplay: true
+        lazyLoading:true,
+        navigation: {
+            nextEl: '.home-next',
+            prevEl: '.home-prev',
+        },
+    });
+    var swiperV = new Swiper('.vilia', {
+        //autoplay: true,
+        navigation: {
+            nextEl: '.vilia-next',
+            prevEl: '.vilia-prev',
+        },
+    });
+    var swiperB = new Swiper('.business', {
+        //autoplay: true,
+        navigation: {
+            nextEl: '.business-next',
+            prevEl: '.business-prev',
+        },
+    });
+
+    $(document).ready(function () {
+        var $tabs = $('.sub-col'),          // 导航
+            $sections = $('.frame-list'),       // 模块
+            $window = $(window),
+            tabLength = $tabs.length - 1;
+        $window.on('scroll', function () {
+            var scrollTop = $window.scrollTop();
+            for (len = tabLength; len > -1; len--) {
+                var that = $sections.eq(len);
+                if (scrollTop >= that.offset().top) {
+                    if (that.attr('id')) {
+                        var className = that.attr('id');
+                        $tabs.removeClass('gold');
+                        $('.sub-col[name=' + className + ']').addClass('gold');
+                    }
+                    break;
+                }
+            }
+        });
+        var whdef = 100 / 1920;// 表示1920的设计图,使用100PX的默认值
+        var wH = window.innerHeight;// 当前窗口的高度
+        var wW = window.innerWidth;// 当前窗口的宽度
+        var rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+        $('html').css('font-size', rem + "px");
+    });
+</script>
+</html>

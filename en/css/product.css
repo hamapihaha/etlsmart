@@ -1,0 +1,170 @@
+p {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: normal;
+}
+
+.core-main {
+    position: absolute;
+    z-index: 10;
+    top: 10%;
+    left: 10%;
+}
+
+.core-til {
+    font-size: .26rem;
+    letter-spacing: .01rem;
+    font-weight: bold;
+}
+
+.core-desc {
+    margin-top: .6rem;
+    overflow: hidden;
+}
+
+.desc-list {
+    width: 30%;
+    float: left;
+    padding-top: .5rem;
+    height: 3.5rem;
+    border-top: 2px solid #C29C61;
+    margin-left: 12%;
+}
+
+.desc-til {
+    font-size: .35rem;
+    font-family: 'SourceHanSansCN-Meduim';
+}
+
+.desc-frame {
+    padding: 0;
+    margin: .4rem 0;
+    font-size: .18rem;
+    line-height: .35rem;
+}
+
+.technology-desc {
+    margin-bottom: .2rem;
+}
+
+.core-tech {
+    font-size: .35rem;
+    letter-spacing: .15rem;
+    font-family: 'SourceHanSansCN-Normal';
+    margin-top: .5rem;
+    margin-left: 13%;
+    padding-top: 13%;
+}
+
+.core-table {
+    background-color: #333;
+    padding-bottom: 1rem;
+}
+
+.core-sub-til {
+    font-family: 'SourceHanSansCN-Normal';
+    font-size: .35rem;
+    margin-left: 13%;
+    padding-top: 13%;
+    padding-bottom: .5rem;
+}
+.swiper-test{
+    height: 9rem;
+}
+.core-table img {
+    width: 74%;
+    margin: 0 auto .2rem;
+    display: block;
+}
+
+.topology {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#robot {
+    background: url("../img/contact_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.robot-msg {
+    width: 40%;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    opacity: .6;
+    line-height: .35rem;
+}
+
+.msg-til {
+    font-size: .3rem;
+    margin-bottom: .4rem;
+    letter-spacing: .05rem;
+}
+
+.actuators {
+    margin: 5% auto 0;
+}
+
+.actuators-til {
+    margin-top: 8%;
+    margin-left: 13%;
+}
+
+.actuators-list {
+    width: 80%;
+    margin: 0 auto .2rem;
+}
+
+.actuators-img {
+    width: calc(28% - 8px);
+    margin: 0 2%;
+    cursor: pointer;
+    transition: all .25s linear;
+}
+
+.actuators-img:hover {
+    box-shadow: 5px 5px 10px #999;
+    transition: all .25s linear;
+}
+
+.more-actuators {
+    display: none;
+}
+
+.more-security {
+    display: none;
+}
+
+.more-smart {
+    text-align: center;
+    margin: .4rem auto;
+    color: #666;
+    cursor: pointer;
+}
+
+#sightPagination .swiper-pagination-bullet {
+    display: inline-block;
+    width: .8rem;
+    height: .2rem;
+    border-radius: 0;
+    background-color: #000;
+    opacity: 1;
+    color: #C29C61;
+    margin: 0 1px;
+    font-size: .14rem;
+}
+
+#sightPagination .swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+.sight-frame {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    opacity: .6;
+}

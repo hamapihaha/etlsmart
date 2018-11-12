@@ -1,0 +1,132 @@
+p{
+    padding: 0;
+    margin: 0;
+}
+.banner{
+    width: 33.3%;
+    position: absolute;
+    top: 13%;
+    left: 13%;
+}
+.search{
+    position: absolute;
+    bottom: 20%;
+    left: 13%;
+    width: 23.7%;
+}
+.search input{
+    width: 100%;
+    height: .50rem;
+    padding: 0 .05rem;
+    font-size: .22rem;
+    line-height: .5rem;
+}
+.search i{
+    position: absolute;
+    right: 5%;
+    top: .15rem;
+    cursor: pointer;
+    font-size: .22rem;
+    color: #333;
+    font-weight: bold;
+}
+.customer-question{
+    padding-top: 8%;
+    padding-left: 13%;
+    font-size: 0;
+}
+.custome-img{
+    width: 100%;
+}
+.question-top{
+    width: 74%;
+    margin: .6rem auto;
+    box-shadow: 5px 5px 5px #e0e0e0;
+    border: 1px solid #e0e0e0;
+}
+.question-desc{
+    width: 90%;
+    margin: 0 auto .6rem;
+    overflow: hidden;
+}
+.question-list{
+    border-top: 2px solid #e0e0e0;
+    padding: .2rem 0;
+    font-size: .18rem;
+}
+.question-bottom-desc{
+    width: 90%;
+    margin: .60rem auto;
+}
+.question-content{
+    color: #919191;
+    margin-left: .1rem;
+    padding: .1rem 0;
+    line-height: .35rem;
+}
+.question-bottom{
+    width: 74%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #e0e0e0;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    padding-bottom: 10%;
+}
+.top-gold{
+    width: 1rem;
+    height: .02rem;
+    background-color: #C29C61;
+    margin: .4rem 0;
+}
+.company-msg{
+    width: 50%;
+    float: left;
+    padding-top: .2rem;
+}
+.contact-us{
+    width: 50%;
+    float: left;
+    padding-top: .2rem;
+}
+.contact-us input,textarea{
+    background-color: #f3f3f3;
+}
+.question-til{
+    font-family: SourceHanSansCN-Meduim;
+}
+.contact-us input{
+    width: 90%;
+    height: .4rem;
+    font-size: .16rem;
+    padding-left: .05rem;
+    display: block;
+    margin: .2rem 0;
+    border: 1px solid #e0e0e0;
+}
+.post-btn{
+    width: .8rem;
+    height: .3rem;
+    line-height: .3rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    float: right;
+    margin-right: 10%;
+    cursor: pointer;
+    margin-top: .2rem;
+    font-size: .18rem;
+}
+.recruitment{
+    background: url("../img/intelligent_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.more-href{
+    margin-top: 5%;
+    font-size: .18rem;
+
+}
+.more-href a{
+    margin-right: .4rem;
+    display: inline-block;
+    font-size: .18rem;
+}

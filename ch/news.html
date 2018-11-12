@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <title>ETL官方网站</title>
+    <meta charset="UTF-8"/>
+    <link href="./favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="//at.alicdn.com/t/font_589553_on0om2ui2ym.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/news.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background-color: #f5f5f5">
+<div class="frame">
+    <div class="tab" style="background-color: #fff">
+        <img src="img/headImg.jpg" alt="" class="headImg">
+        <a href="./index.html" class="tab-list sub-tab-list">
+            首页
+        </a>
+        <a href="./about.html" class="tab-list sub-tab-list">
+            关于我们
+        </a>
+        <a href="./product.html" class="tab-list sub-tab-list">
+            技术与产品
+        </a>
+        <a href="./project.html" class="tab-list sub-tab-list">
+            智能解决方案
+        </a>
+        <a href="./news.html" class="tab-list sub-tab-list">
+            新闻动态
+        </a>
+        <a href="./join.html" class="tab-list sub-tab-list">
+            加入我们
+        </a>
+        <a href="./contact.html" class="tab-list sub-tab-list">
+            联系我们
+        </a>
+        <div class="out-link">
+            <i class="iconfont">&#xe629;</i>
+            <i class="iconfont">&#xe631;</i>
+            <i class="iconfont">&#xe635;</i>
+        </div>
+    </div>
+    <div class="main" id="frame">
+        <div class="title">
+            <p class="en-til">
+                LATEST NEWS
+            </p>
+            <p class="gold ch-til" >
+                新闻动态
+            </p>
+        </div>
+        <div class="news" style="overflow: hidden">
+            <div class="news-list">
+                <img src="./img/news/news1.png" alt="" class="news-img-list">
+                <p class="news-title" style="margin: .10rem 0">
+                    穿越大气层而来的ETL代言人
+                </p>
+                <p class="grey news-time">
+                    2018-07-11
+                </p>
+                <div class="news-content" >
+                    宇宙中除人类以外的又一高等智慧生物。于2002年发现于遥远的 ETL星球，通过时空隧道从未来穿越到地球宇宙中除人类以外的又一高等智慧生物。于2002年发现于遥远的 ETL星球，通过时空隧道从未来穿越到地球
+                </div>
+                <img src="./img/know-more.png" alt="" class="know-more">
+            </div>
+            <div class="news-list">
+                <img src="./img/news/news2.png" alt="" class="news-img-list">
+                <p class="news-title" style="margin: .10rem 0">
+                    ETL无锡招商产品推介会
+                </p>
+                <p class="grey news-time">
+                    2018-06-29
+                </p>
+                <div class="news-content" >
+                    2018年6月29日，公司在无锡进行了产品推介会，向来自无锡及周 边的意向代理商介绍了ETL智能家居控制系统2018年6月29日，公司在无锡进行了产品推介会，向来自无锡及周 边的意向代理商介绍了ETL智能家居控制系统                </div>
+                <img src="./img/know-more.png" alt="" class="know-more">
+            </div>
+            <div class="news-list">
+                <img src="./img/news/news3.png" alt="" class="news-img-list">
+                <p class="news-title" style="margin: .1rem 0">
+                    以行动 致梦想
+                </p>
+                <p class="grey news-time">
+                    2018-06-06
+                </p>
+                <div class="news-content" >
+                    家居行业的迭代速度令人咂舌，传统家居已不能满足消费者日益 增长的需求，未来必将属于万物互联的智能时代!                </div>
+                <img src="./img/know-more.png" alt="" class="know-more">
+            </div>
+            <div class="news-list">
+                <img src="./img/news/news4.png" alt="" class="news-img-list">
+                <p class="news-title" style="margin: .10rem 0">
+                    ETL智能情景面板，C位出道
+                </p>
+                <p class="grey news-time">
+                    2018-06-06
+                </p>
+                <div class="news-content" >
+                    8键/4键智能情景面板，全新系列升级上市。功能全面升级、智能 家居更随心。你要不要Pick一下                </div>
+                <img src="./img/know-more.png" alt="" class="know-more">
+            </div>
+        </div>
+        <p class="etl-more" >
+            <i class="iconfont" style="font-size: .22rem;">&#xe60b;</i>
+            查看ETL更多新闻
+            <i class="iconfont" style="font-size: .21rem;margin-left: .2rem">&#xe89c;</i>
+        </p>
+        <div id="footer"></div>
+        <div id="contact_tab">
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script>
+    $('#footer').load('footer.html');
+    $("#contact_tab").load('contactTab.html');
+    $(function () {
+        var whdef = 100 / 1920;// 表示1920的设计图,使用100PX的默认值
+        var wH = window.innerHeight;// 当前窗口的高度
+        var wW = window.innerWidth;// 当前窗口的宽度
+        var rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+        $('html').css('font-size', rem + "px");
+    });
+</script>
+</html>

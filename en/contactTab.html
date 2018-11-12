@@ -1,0 +1,60 @@
+<div class="contact-tab contact-frame">
+    <div class="contact-tab-list" onclick="qimoChatClick()">
+        <i class="iconfont">&#xe680;</i>
+    </div>
+    <div class="contact-tab-list contact-tab-phone">
+        <i class="iconfont">&#xe6b0;</i>
+    </div>
+    <div class="pop-contact pop-phone">
+        <span class="gold">400-920-3798</span>
+    </div>
+    <a href="./contact.html?contactUs" class="contact-tab-list">
+        <i class="iconfont">&#xe64f;</i>
+    </a>
+    <div class="contact-tab-list contact-weixin">
+        <i class="iconfont">&#xe62a;</i>
+    </div>
+    <div class="contact-tab-list contact-app">
+        <span style="font-size: .15rem">APP</span>
+    </div>
+    <div class="contact-tab-list" onclick="go_top()">
+        <i class="iconfont">&#xe62d;</i>
+    </div>
+</div>
+<div class="contact-QR contact-frame weixin-QR">
+    <img src="./img/QR.jpg" alt="">
+    <span class="gold" style="font-size: .2rem;display: block;margin-top: .1rem;">Wechat public account</span>
+</div>
+<div class="contact-QR contact-frame app-QR">
+    <img src="./img/app_download.jpg" alt="">
+    <span class="gold" style="font-size: .2rem;display: block;margin-top: .1rem;">Download our App</span>
+</div>
+
+<script>
+    $('.tab-list').click(function () {
+        $('.tab-list').removeClass('active');
+        $(this).addClass('active')
+        $('.column').slideUp()
+        if ($(this).next('.column')) {
+            $(this).next('.column').slideToggle()
+        }
+    });
+    function go_top() {
+        $("html,body").animate({scrollTop: 0}, 500);
+    }
+    $(".contact-tab-phone").hover(function () {
+        $('.pop-phone').show()
+    },function(){
+        $('.pop-phone').hide()
+    });
+    $(".contact-weixin").hover(function () {
+        $('.weixin-QR').show()
+    },function(){
+        $('.weixin-QR').hide()
+    });
+    $(".contact-app").hover(function () {
+        $('.app-QR').show()
+    },function(){
+        $('.app-QR').hide()
+    });
+</script>
