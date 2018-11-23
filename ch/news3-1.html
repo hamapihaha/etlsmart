@@ -38,14 +38,20 @@
             <i class="iconfont">&#xe635;</i>
         </div>
     </div>
-    <div class="main" id="frame">
-        <div class="title">
-            <p class="en-til">
-                LATEST NEWS
-            </p>
-            <p class="gold ch-til" >
-                新闻动态
-            </p>
+    <div class="main" id="frame" style="background-color: gainsboro;height: 200px">
+        <div>
+            <div>
+                <p class="en-til" align="left">
+                    LATEST NEWS
+                </p>
+                <p class="gold ch-til" align="left" >
+                    新闻动态
+                </p>
+            </div>
+            <div align="right">
+                <input type="text" value="信息关键词" style="outline: 0.5px;color: #ababab">
+                <input type="button" value="新闻搜索" style="background-color: black;color: white">
+            </div>
         </div>
         <div class="news" style="overflow: hidden">
             <div class="news-list">
@@ -57,9 +63,11 @@
                     2018-11-09
                 </p>
                 <div class="news-content" >
-                    上海时享鉴宜科技有限公司荣膺“2018可持续城市与人居环境奖”---全球人居环境绿色技术范例...
+                    上海时享鉴宜科技有限公司荣膺“2018可持续城市与人居环境奖”--全球人居环境绿色技术范例...
                 </div>
-                <a href="news3-1.html">
+                <a href="#">
+
+
                     <img src="./img/know-more.png" alt="" class="know-more">
                 </a>
             </div>
@@ -144,6 +152,7 @@
 </body>
 <script src="js/jquery.js"></script>
 <script>
+    $('#header').load('header.html');
     $('#footer').load('footer.html');
     $("#contact_tab").load('contactTab.html');
     $(function () {
