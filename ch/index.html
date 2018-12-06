@@ -9,30 +9,34 @@
 </head>
 <body>
 <div class="frame">
-    <div class="tab">
-        <img src="img/headImg.jpg" alt="" class="headImg">
-        <a href="./index.html" class="tab-list" name="home">
-            首页
-        </a>
-        <a href="./about.html" class="tab-list" name="about">
-            关于我们
-        </a>
-        <a href="./product.html" class="tab-list" name="product">
-            技术与产品
-        </a>
-        <a href="./project.html" class="tab-list">
-            智能解决方案
-        </a>
-        <a href="./news.html" class="tab-list" name="news">
-            新闻动态
-        </a>
-        <a href="./join.html" class="tab-list">
-            加入我们
-        </a>
-        <a href="./contact.html" class="tab-list" name="contact">
-            联系我们
-        </a>
-        <div class="out-link">
+    <div class="tab" style="overflow: hidden;overflow-scrolling: auto">
+        <div>
+            <img src="img/headImg.jpg" alt="" class="headImg">
+        </div>
+        <div>
+            <a href="./index.html" class="tab-list" name="home">
+                首页
+            </a>
+            <a href="./about.html" class="tab-list" name="about">
+                关于我们
+            </a>
+            <a href="./product.html" class="tab-list" name="product">
+                技术与产品
+            </a>
+            <a href="./project.html" class="tab-list">
+                智能解决方案
+            </a>
+            <a href="./news.html" class="tab-list" name="news">
+                新闻动态
+            </a>
+            <a href="./join.html" class="tab-list">
+                加入我们
+            </a>
+            <a href="./contact.html" class="tab-list" name="contact">
+                联系我们
+            </a>
+        </div>
+        <div class="out-link"  style="position: fixed;top: 850px;left: 200px">
             <i class="iconfont">&#xe631;</i>
             <i class="iconfont">&#xe629;</i>
             <i class="iconfont">&#xe635;</i>
@@ -59,8 +63,10 @@
         <div class="frame-list swiper-slide" id="about">
             <div class="about-us">
                 <span class="swiper-til">关于我们</span>
-                <p class="about-frame">
-                    上海时享鉴宜科技有限公司是行业领先的智能家居系统解决方案提供商、数据平台服务运营商，旗下有ETL品牌智能家居控制系统，ETL品牌核心技术已走在国内前沿。致力于高新技术项目的转化，定向研究和生产高端智能家居产品，是国内最早研发智能控制的企业之一。<br>公司成立于2002年，经历15年专业研发、12年实践经验，于2017年联合“鉴宜投资”正式成立——ETL，为客户提供集设计、施工、安装、服务、运营于一体的智能家居解决方案。
+                <p class="about-frame" style="line-height: 55px;letter-spacing: 2px">
+                    时享鉴宜是行业领先的智能家居系统解决方案提供商、数据平台服务运营商，致力于高新技术项目的转化，定向研究和生产高端智能家居产品，是国内最早研发智能控制的企业之一。</p>
+                <p class="about-frame" style="line-height: 55px;letter-spacing: 2px">
+                    公司成立于2002年，经历15年专业研发、12年实践经验，于2017年联合“鉴宜投资”正式成立--上海时享鉴宜科技有限公司，为客户提供集设计、施工、安装、服务、运营于一体的智能家居解决方案。
                 </p>
                 <a href="about.html">
                     <img data-original="./img/more.png" alt="" class="more-img lazy">
@@ -71,11 +77,9 @@
             <div class="product">
                 <span class="grey en-til">ETL SMART CONTROL SYSTEM</span>
                 <span class="gold ch-til">ETL智能家居控制系统</span>
-                <p>
 
-                </p>
-                <div align="center">
-                    <video src="./video/etlvideo.mp4" controls="controls" autoplay="autoplay" height="85%" width="100%"></video>
+                <div align="center" style="margin:100px">
+                    <video src="./video/etlvideo.mp4" controls="controls" preload="auto" loop="loop" height="100%" width="100%"></video>
                 </div>
             </div>
         </div>
@@ -144,36 +148,36 @@
                 <span class=" en-til">LATEST NEWS</span>
                 <span class="gold ch-til">新闻动态</span>
             </div>
-            <div class="swiper-container news-swiper">
+            <div class="swiper-container news-swiper" style="width: 1650px;height: 900px">
                 <div class="swiper-wrapper news-wrapper">
                     <div class="swiper-slide news-slide">
                         <div class="news-main">
-                                <img src="img/index/news1.png" alt="" class="news-swiper-img lazy">
+                            <img src="img/index/news1-01.png" alt="" class="news-swiper-img lazy">
                         </div>
                     </div>
                     <div class="swiper-slide news-slide">
                         <div class="news-main">
-                            <img src="img/index/news2.png" alt="" class="news-swiper-img lazy">
+                            <img src="img/index/news1-02.png" alt="" class="news-swiper-img lazy">
                         </div>
                     </div>
                     <div class="swiper-slide news-slide">
                         <div class="news-main">
-                            <img src="img/index/3.png" alt="" class="news-swiper-img lazy">
+                            <img src="img/index/news1-03.png" alt="" class="news-swiper-img lazy">
                         </div>
                     </div>
                     <div class="swiper-slide news-slide">
                         <div class="news-main">
-                            <img src="img/index/news4.png" alt="" class="news-swiper-img lazy">
+                            <img src="img/index/news1-04.png" alt="" class="news-swiper-img lazy">
                         </div>
                     </div>
                     <div class="swiper-slide news-slide">
                         <div class="news-main">
-                            <img src="img/index/news5.png" alt="" class="news-swiper-img lazy">
+                            <img src="img/index/news1-05.png" alt="" class="news-swiper-img lazy">
                         </div>
                     </div>
                     <div class="swiper-slide news-slide">
                         <div class="news-main">
-                            <img src="img/index/news6.png" alt="" class="news-swiper-img lazy">
+                            <img src="img/index/news1-06.png" alt="" class="news-swiper-img lazy">
                         </div>
                     </div>
                 </div>

@@ -9,63 +9,61 @@
 </head>
 <body style="background-color: #ffffff">
 <div class="frame">
-    <div class="tab" style="background-color: #fff">
-        <img src="img/headImg.jpg" alt="" class="headImg">
-        <a href="./index.html" class="tab-list sub-tab-list">
-            首页
-        </a>
-        <a href="./about.html" class="tab-list sub-tab-list">
-            关于我们
-        </a>
-        <a href="./product.html" class="tab-list sub-tab-list">
-            技术与产品
-        </a>
-        <a href="./project.html" class="tab-list sub-tab-list">
-            智能解决方案
-        </a>
-        <a href="./news.html" class="tab-list sub-tab-list">
-            新闻动态
-        </a>
-        <a href="./join.html" class="tab-list sub-tab-list">
-            加入我们
-        </a>
-        <a href="./contact.html" class="tab-list sub-tab-list">
-            联系我们
-        </a>
-        <div class="out-link">
+    <div class="tab" style="background-color: #fff;overflow: hidden;overflow-scrolling: auto">
+        <div>
+            <img src="img/headImg.jpg" alt="" class="headImg">
+        </div>
+        <div>
+            <a href="./index.html" class="tab-list" name="home">
+                首页
+            </a>
+            <a href="./about.html" class="tab-list" name="about">
+                关于我们
+            </a>
+            <a href="./product.html" class="tab-list" name="product">
+                技术与产品
+            </a>
+            <a href="./project.html" class="tab-list">
+                智能解决方案
+            </a>
+            <a href="./news.html" class="tab-list" name="news">
+                新闻动态
+            </a>
+            <a href="./join.html" class="tab-list">
+                加入我们
+            </a>
+            <a href="./contact.html" class="tab-list" name="contact">
+                联系我们
+            </a>
+        </div>
+        <div class="out-link"  style="position: fixed;top: 850px;left: 200px">
             <i class="iconfont">&#xe629;</i>
             <i class="iconfont">&#xe631;</i>
             <i class="iconfont">&#xe635;</i>
         </div>
     </div>
     <div class="main" id="frame">
+        <div>
         <font size="20px" color="#333333">
-            <div class="news" style="background-color: gainsboro;height: 80px;width: 100%" align="center">
-                <div class="news">
-                    <table border="0" width="100%">
-                        <tr>
-                            <td>
-                                新闻动态
-                            </td>
-                            <td align="right">
-                                <input type="text" value="信息关键词" style="outline: none;color: #ababab"><input type="button" value="新闻搜索" style="background-color: black;color: white;">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+            <div class="news" style="background-color: gainsboro;height: 80px;width: 100%">
+                        <div style="position: relative;left: 10%;top: 70%;">
+                            新闻动态
+                        </div>
+                        <div style="position: relative;left: 60%;bottom: 38%;">
+                            <i class="iconfont" style="font-size: .22rem;">&#xe60b;</i>
+                            <input type="text" style="font-size: 24px;background-color: gainsboro;color: grey;border:0.5px solid lightgray" value="信息关键词" onfocus="javascript:if(this.value=='信息关键词')this.value='';"/><button type="button" style="background-color: black;color: white;font-size: 22px">新闻搜索</button>
+                        </div>
             </div>
             <div style="width: 100%;margin-left: 200px">
-                <br>
-                【享无止境】ETL智能家居控制系统
-                </br>
-                    <div id="show_time0" style="color: grey;font-size: 20px">
-
-
+                <br style="font-size: 24px">
+                荣耀一刻！ETL时享鉴宜在联合国亚太总部斩获GFHS“2018可持续城市与人居环境大奖”
+                <br/>
+                    <div id="show_time0" style="color: grey;font-size: 18px">
                         <script>
                             setInterval("show_time0.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",0);
                         </script>
                     </div>
-                    <div id="pagecount" style="color: grey;font-size: 20px">
+                    <div id="pagecount" style="color: grey;font-size: 18px">
                         <script type="text/javascript">
                             if (localStorage.pagecount)
                             {
@@ -74,95 +72,78 @@
                             else{
                                 localStorage.pagecount=1;
                             }
-                            document.write("访问数: " + localStorage.pagecount);
-
+                            document.write("浏览次数: " + localStorage.pagecount);
                         </script>
                     </div>
-                </br>
+                <br/>
             </div>
         </font>
-        <div class="news" style="border:black solid 1px;height: 700px;width: 1000px" align="center">
-            <img src="img/news/etl.png" height="800px" width="1000px">
         </div>
-        </br>
-        <div class="news" style="overflow: hidden" align="center">
-            <div>
-                <img src="img/news/part1.png" width="100%">
+        <div class="news" style="overflow: hidden">
+            <img src="img/news/news3-21.png" width="100%" >
+            <br/>
+            <div class="article" style="color: grey">
+                <p style="font-size: 24px;line-height: 40px;letter-spacing: 1px">
+                    （10月31日泰国曼谷消息）2018全球人居环境论坛会议（GFHS 2018）于10月30日-31日在泰国曼谷联合国会议中心成功举办。本届会议由全球人居环境论坛（GFHS）主办、联合国亚太经社理事会（UNESCAP）特别支持，世界一带一路组织（GOBA）、世界非政府组织联合会 (WANGO)、世界和平联盟 (UPF)和其他相关机构共同协办。上海时享鉴宜科技有限公司因其研创的“ETL智能家居控制系统”，在智能创新、绿色环保、个性化设置及低碳节能等方面的突出成绩荣膺“2018可持续城市与人居环境奖”-- 全球人居环境绿色技术范例。
+                </p>
+                <br/>
+                <img src="img/news/news3-22.png" width="80%" style="position: relative;left: 10%">
+                <br/>
+                <p style="font-size: 24px;line-height: 35px;letter-spacing: 2px">联合国亚太经社理事会负责人咸洪朱先生出席此次会议并讲话。联合国副秘书长、联合国人类住区规划署执行主任麦慕娜·谢里夫女士为大会发来视频演讲，高度肯定全球人居环境论坛十余年来为推动可持续城市与人居环境所作出的不懈努力和杰出贡献。</p>
+                <br/>
+                <img src="img/news/news3-23.png" width="80%" style="position: relative;left: 10%">
+                <div style="position: relative;left: 30%;font-size: 24px;line-height: 40px;letter-spacing: 2px">
+                    联合国亚太经社理事会负责人咸洪朱先生致欢迎词
+                </div>
+                <br/>
+                <p style="font-size: 24px;line-height: 40px;letter-spacing: 1px">
+                    本届论坛会议以“加强城市创新，实现可持续发展目标11和《新城市议程》”为主题，吸引来自40个国家的400多位主要利益相关者、交流对话、分享经验、建立新型伙伴关系。旨在为亚太地区乃至全球的利益相关者提供一个高级别的对话平台，分享城市创新的政策、策略、技术和成功经验，加强能力建设，培育新型伙伴关系，加速有效的行动，实现可持续发展目标11和《新城市议程》，推动“一带一路”倡议背景下的务实合作和绿色发展。。
+                </p>
+                <br/>
+                <img src="img/news/news3-24.png" width="80%" style="position: relative;left: 10%">
+                <br/>
+                <p style="font-size: 24px;line-height: 35px;letter-spacing: 2px">“2018可持续城市与人居环境奖”（SCAHSA•飒飒奖）颁奖盛典在30日晚拉开帷幕，成为本届会议的一大亮点。来自全球36个杰出单位和个人荣膺此国际大奖。ETL时享鉴宜的“智能家居控制系统”被评为全球人居环境绿色技术范例，唐国华副董事长代表公司上台领取了奖杯，并接受了一带一路电视台特别专访。</p>
+                <br/>
+                <img src="img/news/news3-25.png" width="80%" style="position: relative;left: 10%">
+                <div style="position: relative;left: 30%;font-size: 24px;line-height: 40px;letter-spacing: 2px">
+                    唐国华副董事长（前排右一）代表ETL时享鉴宜领奖
+                </div>
+                <br/>
+                <p style="font-size: 24px;line-height: 35px;letter-spacing: 2px">唐总表示，ETL时享鉴宜的预集成专利技术给用户带来更便捷的智能家居控制、更完善的安防措施、更自由的随心组合、更无限的系统功能拓展，实现家庭AI智能化。作为智能家居系统解决方案提供商和数据平台服务运营商，ETL时享鉴宜历经15年潜心研发、12年专业实践，产品已应用于中国10多个城市50余个高端项目。</p>
+                <br/>
+                <p style="font-size: 24px;line-height: 35px;letter-spacing: 2px">“让每个家庭提前进入智能时代”是我们的使命，秉承“共创，共识，共赢，共享”的核心价值观，“产品即服务”的商业模式，努力实现“安防，安养，安康”的保障体系。将打造AI物联科技+互联网平台的智能家居生态链，成为全球智能家居的领航者，为中国乃至全球的人居环境改善做出卓越的贡献。</p>
+                <br/>
+                <img src="img/news/news3-26.png" width="80%" style="position: relative;left: 10%">
+                <div style="position: relative;left: 40%;font-size: 24px;line-height: 40px;letter-spacing: 2px">
+                    ETL接受一带一路电视台专访
+                </div>
+                <br/>
+                <p style="font-size: 24px;line-height: 35px;letter-spacing: 2px">全球市长会议结束后，ETL时享鉴宜特别受邀，参加本次论坛的高规格议程--闭门会议，其核心产品“ETL智能家居控制系统”受到国际业界的广泛兴趣和高度认可。会议上ETL时享鉴宜与全球行业大佬一起就“采用循环经济模式扩大可持续城市基础设施融资、区块链技术和智慧城市、从人居人文角度打造智慧城市、保护妇女和儿童权益”等方面进行广泛的沟通和深度交流。区块链技术作为当下火热的新兴科技，对于“智慧城市”的构建起着关键性的作用。其“去第三方中心化”的特点有效解决了传统交易中的信任和安全问题，为“万物互联”的“智慧城市”更添一份安全保障。本届会议主题精准，及时有效，为城市、企业和所有行业面临的新旧挑战提供了可借鉴的解决方案，并指明了通向未来的路径。</p>
+                <br/>
+                <p style="font-size: 24px;line-height: 35px;letter-spacing: 2px">ETL时享鉴宜作为中国智能家居行业的革新者和引领者，将不负使命砥砺前行，用科技创新为全球城市可持续化发展助力，欢迎您和我们一起拥抱和书写ETL时享鉴宜的璀璨未来！</p>
             </div>
-            <div class="article">
-                <font style="color: grey">
-                    <div class="title" align="center" style="font-size: 35px">
-                        <br>公司简介</br>
-                    </div>
-                    <br>
-                    <div class="text" style="font-size: 30px">
-                        <p>时享鉴宜是行业领先的智能家居系统解决方案提供商和数据平台服务运营商，定向研究和生产高端智能家居产品，是国内最早研发智能控制的企业之一。公司秉承着“一切只为您”的服务精神，为用户开启家居生活的智能时代。
-                        </p>
-                        <div class="img" align="center">
-                            <img src="img/headImg.jpg" alt="" class="headImg">
+            <hr/>
+            <div style="height: 300px">
+                <ul style="display: inline;white-space: nowrap;">
+                    <li>
+                        <strong>
+                            <a href="news3-3.html" style="font-size: 24px">
+                               . 下一篇：上海凯皑灯饰签约ETL时享鉴宜
+                            </a>
+                        </strong>
+                    </li>
+                    <li>
+                        <div class="out-link"  style="position: relative;left: 80%;bottom: 380px">
+                            <i class="iconfont">&#xe631;</i>
+                            <i class="iconfont">&#xe629;</i>
+                            <i class="iconfont">&#xe635;</i>
                         </div>
-                        <p>
-                            公司成立于2002年，致力于为高端别墅及会所研发智能家居系统。2005年ETL第一代产品问世，斩获国家预集成系统发明专利。经历15年专业研发、12年实践经验，公司不断整合资源，于2017年联合“鉴宜投资”正式成立——上海时享鉴宜科技有限公司，为客户提供集设计、施工、安装、服务、运营于一体的智能家居解决方案。2018年ETL第四代控制系统产品问世，再次获得国家发明专利，公司的创新与研发实力再次得到认可。
-                        </p>
-                    </div>
-                </font>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <img src="img/news/part2.png" width="100%">
-            </div>
-            <div class="article">
-                <font style="color: grey">
-                    <div class="title" align="center" style="font-size: 35px">
-                        <br>核心技术</br>
-                    </div>
-                    <br>
-                    <div class="img" align="center">
-                        <img src="img/news/news3-11.png" alt="" class="img" width="100%" height="100%">
-                    </div>
-                </font>
-            </div>
-            <div>
-                <img src="img/news/part3.png" width="100%">
-            </div>
-            <div class="article">
-                <font style="color: grey">
-                    <div class="title" align="center" style="font-size: 35px">
-                        <br>ETL智能家居控制系统</br>
-                    </div>
-                    <br>
-                    <div class="img">
-                        <img src="img/news/news3-12.png" alt="" class="img" width="100%" height="100%" align="center">
-                        <br>
-                        </br>
-                        <img src="img/news/news3-13.png" alt="" class="img" width="100%" height="100%" align="center">
-                        <br>
-                        </br>
-                        <img src="img/news/news3-14.png" alt="" class="img" width="100%" height="100%" align="center">
-                        <br>
-                        </br>
-                    </div>
-                </font>
-            </div>
-            <div>
-                <img src="img/news/part4.png" width="100%">
-            </div>
-            <div class="article">
-                <font style="color: grey">
-                    <div class="title" align="center" style="font-size: 35px">
-                        <br>居家应用</br>
-                    </div>
-                    <br>
-                    <div class="img">
-                        <img src="img/news/news3-15.png" alt="" class="img" width="100%" height="100%" align="center">
-                        <img src="img/news/news3-16.png" alt="" class="img" width="100%" height="100%" align="center">
-                        <br>
-                        </br>
-                    </div>
-                </font>
-            </div>
-        <div id="footer"></div>
-        <div id="contact_tab">
         </div>
+        <div id="footer"></div>
+        <div id="contact_tab"></div>
     </div>
 </div>
 </body>

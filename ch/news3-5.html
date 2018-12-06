@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <title>ETL官方网站</title>
+    <meta charset="UTF-8"/>
+    <link href="./favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="//at.alicdn.com/t/font_589553_on0om2ui2ym.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/news.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background-color: #ffffff">
+<div class="frame">
+    <div class="tab" style="background-color: #fff;overflow: hidden;overflow-scrolling: auto">
+        <div>
+            <img src="img/headImg.jpg" alt="" class="headImg">
+        </div>
+        <div>
+            <a href="./index.html" class="tab-list" name="home">
+                首页
+            </a>
+            <a href="./about.html" class="tab-list" name="about">
+                关于我们
+            </a>
+            <a href="./product.html" class="tab-list" name="product">
+                技术与产品
+            </a>
+            <a href="./project.html" class="tab-list">
+                智能解决方案
+            </a>
+            <a href="./news.html" class="tab-list" name="news">
+                新闻动态
+            </a>
+            <a href="./join.html" class="tab-list">
+                加入我们
+            </a>
+            <a href="./contact.html" class="tab-list" name="contact">
+                联系我们
+            </a>
+        </div>
+        <div class="out-link"  style="position: fixed;top: 850px;left: 200px">
+            <i class="iconfont">&#xe629;</i>
+            <i class="iconfont">&#xe631;</i>
+            <i class="iconfont">&#xe635;</i>
+        </div>
+    </div>
+    <div class="main" id="frame">
+        <div>
+            <font size="20px" color="#333333">
+                <div class="news" style="background-color: gainsboro;height: 80px;width: 100%">
+                    <div style="position: relative;left: 10%;top: 70%;">
+                        新闻动态
+                    </div>
+                    <div style="position: relative;left: 60%;bottom: 38%;">
+                        <i class="iconfont" style="font-size: .22rem;">&#xe60b;</i>
+                        <input type="text" style="font-size: 24px;background-color: gainsboro;color: grey;border:0.5px solid lightgray" value="信息关键词" onfocus="javascript:if(this.value=='信息关键词')this.value='';"/><button type="button" style="background-color: black;color: white;font-size: 22px">新闻搜索</button>
+                    </div>
+                </div>
+                <div style="width: 100%;margin-left: 200px">
+                    <br style="font-size: 35px">
+                    【大！公！开！】看，穿越大气层而来的ETL代言人
+                    <br/>
+                    <div id="show_time0" style="color: grey;font-size: 18px">
+                        <script>
+                            setInterval("show_time0.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",0);
+                        </script>
+                    </div>
+                    <div id="pagecount" style="color: grey;font-size: 18px">
+                        <script type="text/javascript">
+                            if (localStorage.pagecount)
+                            {
+                                localStorage.pagecount=Number(localStorage.pagecount) +1;
+                            }
+                            else{
+                                localStorage.pagecount=1;
+                            }
+                            document.write("浏览次数: " + localStorage.pagecount);
+                        </script>
+                    </div>
+                    <br/>
+                </div>
+            </font>
+        </div>
+        <div class="news" style="overflow: hidden">
+            <div>
+                <img src="img/news/news3-51.png" width="100%">
+            </div>
+            <hr/>
+            <div style="height: 300px">
+                <ul style="display: inline;white-space: nowrap;">
+                    <li>
+                        <strong>
+                            <a href="news3-6.html" style="font-size: 24px">
+                                . 下一篇：【享无止境】ETL智能家居控制系统
+                            </a>
+                        </strong>
+                    </li>
+                    <li>
+                        <div class="out-link"  style="position: relative;left: 80%;bottom: 380px">
+                            <i class="iconfont">&#xe631;</i>
+                            <i class="iconfont">&#xe629;</i>
+                            <i class="iconfont">&#xe635;</i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer"></div>
+        <div id="contact_tab"></div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script>
+    $('#header').load('header.html');
+    $('#footer').load('footer.html');
+    $("#contact_tab").load('contactTab.html');
+    $(function () {
+        var whdef = 100 / 1920;// 表示1920的设计图,使用100PX的默认值
+        var wH = window.innerHeight;// 当前窗口的高度
+        var wW = window.innerWidth;// 当前窗口的宽度
+        var rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+        $('html').css('font-size', rem + "px");
+    });
+</script>
+</html>

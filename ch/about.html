@@ -9,13 +9,16 @@
 </head>
 <body>
 <div class="frame">
-    <div class="tab">
+    <div class="tab" style="overflow: hidden;overflow-scrolling: auto">
+        <div>
         <img src="img/headImg.jpg" alt="" class="headImg">
+        </div>
+        <div>
         <a href="./index.html" class="tab-list sub-tab-list">
             首页
         </a>
-        <div class="tab-list sub-tab-list">
-            <a href="./about.html">
+        <div>
+            <a href="#" class="tab-list sub-tab-list">
                 关于我们
             </a>
             <ul class="column">
@@ -40,7 +43,8 @@
         <a href="./contact.html" class="tab-list sub-tab-list">
             联系我们
         </a>
-        <div class="out-link">
+        </div>
+        <div class="out-link"  style="position: fixed;top: 850px;left: 200px">
             <i class="iconfont">&#xe629;</i>
             <i class="iconfont">&#xe631;</i>
             <i class="iconfont">&#xe635;</i>
@@ -50,8 +54,11 @@
         <div class="frame-list swiper-slide" id="about">
             <div class="about-us">
                 <span class="swiper-til">关于我们</span>
-                <p class="about-frame">
-                    上海时享鉴宜科技有限公司是行业领先的智能家居系统解决方案提供商、数据平台服务运营商，旗下有ETL品牌智能家居控制系统，ETL品牌核心技术已走在国内前沿。致力于高新技术项目的转化，定向研究和生产高端智能家居产品，是国内最早研发智能控制的企业之一。<br>公司成立于2002年，经历15年专业研发、12年实践经验，于2017年联合“鉴宜投资”正式成立——ETL，为客户提供集设计、施工、安装、服务、运营于一体的智能家居解决方案。
+                <p class="about-frame" style="line-height: 55px;letter-spacing: 2px">
+                    时享鉴宜是行业领先的智能家居系统解决方案提供商、数据平台服务运营商，致力于高新技术项目的转化，定向研究和生产高端智能家居产品，是国内最早研发智能控制的企业之一。</p>
+                <p class="about-frame" style="line-height: 55px;letter-spacing: 2px">
+                    公司成立于2002年，经历15年专业研发、12年实践经验，于2017年联合
+                    “鉴宜投资”正式成立--上海时享鉴宜科技有限公司，为客户提供集设计、施工、安装、服务、运营于一体的智能家居解决方案。
                 </p>
             </div>
         </div>
@@ -82,7 +89,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-us-frame frame-list" id="awards" style="display: flex;position: relative;background-color: #f5f5f5">
+        <div class="about-us-frame frame-list" id="awards" style="display: flex;border: 0px; position: relative;background-color: #f5f5f5">
             <div class="awards-main">
                 <div class="product awards-product">
                     <span class=" en-til">AWARDS & CERTIFICATES</span>
@@ -90,34 +97,34 @@
                 </div>
                 <div class="awards-img">
                     <div class="awards-img-list">
-                        <img data-original="img/about/awards1.png" alt="" class="lazy">
+                        <img src="img/about/awards1.png" alt="" class="lazy">
                     </div>
                     <div class="awards-img-list">
-                        <img data-original="img/about/awards2.png" alt="" class="lazy">
+                        <img src="img/about/awards2.png" alt="" class="lazy">
                     </div>
                     <div class="awards-img-list">
-                        <img data-original="img/about/awards3.png" alt="" class="lazy">
+                        <img src="img/about/awards3.png" alt="" class="lazy">
                     </div>
                     <div class="awards-img-list">
-                        <img src="img/about/awards4.png" alt="" class="small-img">
+                        <img src="img/about/awards4.png" alt="" class="lazy">
                     </div>
                     <div class="awards-img-list">
-                        <img src="img/about/awards5.png" alt="" class="small-img">
+                        <img src="img/about/awards5.png" alt="" class="lazy">
                     </div>
                     <div class="awards-img-list">
-                        <img src="img/about/awards6.png" alt="" class="small-img">
+                        <img src="img/about/awards6.png" alt="" class="lazy">
                     </div>
                     <div class="awards-img-list">
-                        <img src="img/about/awards7.png" alt="" class="small-img">
+                        <img src="img/about/awards7.png" alt="" class="lazy">
                     </div>
                     <div class="awards-img-list">
-                        <img src="img/about/awards8.png" alt="" class="small-img">
+                        <img src="img/about/awards8.png" alt="" class="lazy">
                     </div>
                     <div class="awards-img-list">
-                        <img src="img/about/awards9.png" alt="" class="small-img">
+                        <img src="img/about/awards9.png" alt="" class="lazy">
                     </div>
                     <div class="awards-img-list">
-                        <img data-original="img/about/awards10.png" alt="" class="lazy">
+                        <img src="img/about/awards10.png" alt="" class="lazy">
                     </div>
                 </div>
             </div>
@@ -173,7 +180,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div id="footer"></div>
         <div id="contact_tab">
@@ -181,25 +187,40 @@
     </div>
 </div>
 </body>
+<script src="js/swiper-4.3.3.min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.lazyload.min.js"></script>
 <script>
-    $(function () {
-        $(".sub-col").click(function () {
-            $('.sub-col').removeClass('gold')
-            $(this).addClass('gold')
-        });
-    });
+
     $('#footer').load('footer.html');
     $("#contact_tab").load('contactTab.html');
     $("img.lazy").lazyload({
-        effect : "fadeIn"
+        effect : "fadeIn",
+        skip_invisible : false,
+        threshold :20
     });
+
+    $(function () {
+        $(".sub-col").click(function () {
+            $('.sub-col').removeClass('gold');
+            $(this).addClass('gold')
+        });
+        $(".actuators-more").click(function () {
+            $(this).addClass('hide');
+            $(".more-actuators").slideDown()
+        });
+        $(".security-more").click(function () {
+            $(this).addClass('hide');
+            $(".more-security").slideDown()
+        });
+    });
+
     $(document).ready(function () {
         var $tabs = $('.sub-col'),          // 导航
             $sections = $('.frame-list'),       // 模块
             $window = $(window),
             tabLength = $tabs.length - 1;
+
         $window.on('scroll', function () {
             var scrollTop = $window.scrollTop();
 
@@ -214,17 +235,18 @@
                 }
             }
         });
+
         var whdef = 100 / 1920;// 表示1920的设计图,使用100PX的默认值
         var wH = window.innerHeight;// 当前窗口的高度
         var wW = window.innerWidth;// 当前窗口的宽度
         var rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
         $('html').css('font-size', rem + "px");
-        var imgW=$(".awards-img-list").width();
+
+       var imgW=$(".awards-img-list").width();
         $(".awards-img-list").height(imgW);
         $(".awards-img-list img").each(function () {
             var w=$(this).width();
-            var h=$(this).height()
-            $(this).css({'margin-left':-w/2,'top':'50%','margin-top':-h/2})
+            var h=$(this).height();
         })
     });
 </script>
